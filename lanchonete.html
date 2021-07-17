@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title></title>
+
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS baixe o bootstrap para ter acesso-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   
+      <!-- FONTAWESOME -->
+    <link rel="stylesheet" type="text/css" href="fontawesome/css/all.css">
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+    <!-- MODO DE UTILIZAÇÃO fontawesome -> https://fontawesome.com/icons?d=gallery&m=free -->
+    <!-- iconic -->
+    <link rel="stylesheet" type="text/css" href="iconic/font/css/open-iconic-bootstrap.css">
+    <!-- MODO DE UTILIZAÇÃO iconic -> https://useiconic.com/open/ -->
+    <script type="text/javascript" src="lanchonete.js"></script>
+    
+  </head>
+<body>
+
+<div class="container">
+  <table class="table text-center">
+     <thead class="bg-info">
+         <tr>
+             <th>N° PEDIDO</th>
+             <th>PRODUTO</th>
+             <th>PREÇO</th>
+         </tr>
+     </thead>
+     <tbody class="table-bordered bg-light">
+        <tr>
+             <td>1</td>
+              <td>Cachorro Quente</td>
+             <td> 6.50</td>
+         </tr></button>
+         <tr>
+             <td>2</td>
+             <td>X-bacon</td>
+             <td> 9.99</td>
+         </tr>
+         <tr>
+             <td>3</td>
+             <td>X-salada</td>
+             <td> 5.40</td>
+         </tr>
+         <tr>
+             <td>4</td>
+             <td>Água</td>
+             <td> 4.00</td>
+         </tr>
+         <tr>
+             <td>5</td>
+             <td>Refrigerante</td>
+             <td> 7.20</td>
+         </tr>
+         <tr>
+             <td>6</td>
+             <td>Misto Quente</td>
+             <td> 4.50</td>
+         </tr>
+         <tr>
+             <td>7</td>
+             <td>Suco</td>
+             <td> 3.20</td>
+         </tr>
+     </tbody>
+ </table></div>
+ <hr>
+ 
+<div class="container">
+    <div class="row justify-content-between">
+    <span>Escolha o numero do seu pedido:
+    <input type="number" min="1" max="7" id="pedido"></span>
+<span>Escolha a quantidade do seu produto:
+    <input type="number" min="1" max="100" id="quantidade"></span>
+    <span>O valor da sua compra é:
+    <input type="number" disabled="disabled" id="resultado"></span>
+</div>
+<br>
+<div class="row">
+    <button class="btn btn-info mr-2" onclick="lanchonete()"> ESCOLHER</button>
+    <button class="btn font-weight-bold text-dark ml-auto" onclick="cancelarPedido()" style="background: red;"> CANCELAR PEDIDO</button>
+</div>
+<br>
+</div>
+<div class="container bg-light aling-self-center table-bordered">
+    <h1 class="text-center"> COMANDA </h1>
+    <div id="texto"></div>
+ </div>
+</body>
+</html>
